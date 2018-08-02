@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://${mysql.host}:${mysql.port}/${mysql.db}
+    username: ${mysql.user}
+    password: ${mysql.password}
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 2000
+      testWhileIdle: true
+
+  redis:
+    host: ${redis.host}
+    port: ${redis.port}
+    password: ${redis.password}
+  devtools:
+    restart:
+      enabled: false
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+server:
+  port: 8888
