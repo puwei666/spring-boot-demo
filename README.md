@@ -17,8 +17,8 @@
    
     ```
     /hello
-    /get_demo?id=1
-    /list_demos 
+    /get?id=1
+    /list 
     ```
     
  

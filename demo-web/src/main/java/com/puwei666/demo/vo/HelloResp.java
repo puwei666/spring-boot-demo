@@ -4,9 +4,9 @@ package com.puwei666.demo.vo;
 import com.puwei666.demo.annotation.CamelName;
 
 @CamelName
-public class DemoResp {
+public class HelloResp {
     private String column1;
-    private String demoColumn2;
+    private String column2;
 
 
     public String getColumn1() {
@@ -17,19 +17,19 @@ public class DemoResp {
         this.column1 = column1;
     }
 
-    public String getDemoColumn2() {
-        return demoColumn2;
+    public String getColumn2() {
+        return column2;
     }
 
-    public void setDemoColumn2(String demoColumn2) {
-        this.demoColumn2 = demoColumn2;
+    public void setColumn2(String column2) {
+        this.column2 = column2;
     }
 
     @Override
     public String toString() {
-        return "DemoResp{" +
+        return "HelloResp{" +
                 "column1='" + column1 + '\'' +
-                ", demoColumn2='" + demoColumn2 + '\'' +
+                ", column2='" + column2 + '\'' +
                 '}';
     }
 }

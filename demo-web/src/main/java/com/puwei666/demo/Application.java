@@ -9,7 +9,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
 @EnableWebMvc
-@ComponentScan("com.puwei666.demo")
 @EnableTransactionManagement
 public class Application extends SpringBootServletInitializer {
 
