@@ -11,10 +11,6 @@ spring:
       maxWait: 2000
       testWhileIdle: true
 
-  redis:
-    host: ${redis.host}
-    port: ${redis.port}
-    password: ${redis.password}
   devtools:
     restart:
       enabled: false
