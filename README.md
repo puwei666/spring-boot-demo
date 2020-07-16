@@ -1,4 +1,4 @@
-# java spring demo
+# java spring boot demo
 
 * 测试环境打包方式：
 
