@@ -1,13 +1,18 @@
 package com.puwei666.demo.vo;
 
+import lombok.Data;
+
+@Data
 public class ResponseMessage<T> {
 
     private int code;
     private String message;
     private T data;
 
-    public ResponseMessage() {
+    public ResponseMessage() { }
 
+    public ResponseMessage(T data) {
+        this.data = data;
     }
 
     public ResponseMessage(int code) {
@@ -30,30 +35,6 @@ public class ResponseMessage<T> {
         this.data = data;
     }
 
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
     @Override
     public String toString() {
         return "ResponseMessage{" +
@@ -61,4 +42,5 @@ public class ResponseMessage<T> {
                 ", message='" + message + '\'' +
                 '}';
     }
+
 }

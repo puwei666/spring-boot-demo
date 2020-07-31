@@ -29,7 +29,8 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
         fastJsonConfig.setSerializeFilters(new CamelNameSerializeFilter());
-        SerializerFeature[] list = new SerializerFeature[]{SerializerFeature.BrowserSecure, SerializerFeature.MapSortField};
+        SerializerFeature[] list = new SerializerFeature[]{SerializerFeature.BrowserSecure,
+                SerializerFeature.MapSortField};
         fastJsonConfig.setSerializerFeatures(list);
         fastConverter.setFastJsonConfig(fastJsonConfig);
         fastConverter.setSupportedMediaTypes(new ArrayList<MediaType>() {{
